@@ -78,6 +78,7 @@
             <!-- Navbar brand -->
             <a class="navbar-brand mt-2 visible-sm mt-lg-0" href="{{ route('landing') }}">
                 <img src="/vape-Nairobi.jpeg" height="35" alt="Vape Nairobi Logo" loading="lazy" />
+                Vape Nairobi
             </a>
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
