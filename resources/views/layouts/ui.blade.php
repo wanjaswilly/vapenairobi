@@ -164,27 +164,27 @@
                 <ul class="navbar-nav flex-row">
                     <!-- Icons -->
                     <li class="nav-item">
-                        <a class="nav-link pe-2" href="https://youtube.com/@vapenairobi">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                    <a href="https://g.co/kgs/mYB6r8h" class="nav-link px-2">
+                    <i class="fab fa-google"></i>
+                </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="https://facebook.com/vapenairobi">
+                        <a class="nav-link px-2" href="https://www.facebook.com/profile.php?id=61558782167871&mibextid=ZbWKwL">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="https://x.com/vapenairobi">
+                        <a class="nav-link px-2" href="https://x.com/VapesNeon?t=qS9b34gQFB78_o2JR9YXuQ&s=09">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ps-2" href="https://instagram.com/vapenairobi">
+                        <a class="nav-link ps-2" href="https://www.instagram.com/vapenairobikenya?igsh=YjduaG53YW1nZ2V3">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ps-2" href="https://wa.me/+254721683375">
+                        <a class="nav-link ps-2" href="https://wa.me/254721683375?text=Hello%20Vape%20Nairobi">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </li>
@@ -220,19 +220,19 @@
 
             <!-- Right -->
             <div>
-                <a href="" class="me-4 text-decoration-none text-dark">
+            <a href="https://www.facebook.com/profile.php?id=61558782167871" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-facebook-f fa-2x"></i>
                 </a>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://x.com/VapesNeon?t=qS9b34gQFB78_o2JR9YXuQ&s=09" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-twitter fa-2x"></i>
                 </a>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://g.co/kgs/mYB6r8h" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-google fa-2x"></i>
                 </a>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://www.instagram.com/vapenairobikenya?igsh=YjduaG53YW1nZ2V3" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-instagram fa-2x"></i>
                 </a>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://wa.me/254721683375?text='Hello%20Vape%20Nairobi'" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-whatsapp fa-2x"></i>
                 </a>
             </div>

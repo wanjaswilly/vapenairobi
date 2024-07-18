@@ -151,19 +151,19 @@
 
             <!-- Right -->
             <div>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://www.facebook.com/profile.php?id=61558782167871" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-facebook-f fa-2x"></i>
                 </a>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://x.com/VapesNeon?t=qS9b34gQFB78_o2JR9YXuQ&s=09" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-twitter fa-2x"></i>
                 </a>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://g.co/kgs/mYB6r8h" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-google fa-2x"></i>
                 </a>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://www.instagram.com/vapenairobikenya?igsh=YjduaG53YW1nZ2V3" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-instagram fa-2x"></i>
                 </a>
-                <a href="" class="me-4 text-decoration-none text-dark">
+                <a href="https://wa.me/254721683375?text='Hello%20Vape%20Nairobi'" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-whatsapp fa-2x"></i>
                 </a>
             </div>
