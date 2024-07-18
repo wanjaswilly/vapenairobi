@@ -34,7 +34,7 @@ ADMIN
                 <div class="card-body text-center">
                     <i class="fas fa-chart-column fa-8x"></i>
                     <h5 class="card-title mt-3"><b>View Site Statistics</b></h5>
-                    <p class="card-text">View visit hours, platforms and most viewed products</p>
+                    <p class="card-text">Visit hours, platforms & most viewed products</p>
                 </div>
             </div>
         </a>
