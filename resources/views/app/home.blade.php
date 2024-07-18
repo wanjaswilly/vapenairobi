@@ -9,11 +9,13 @@ Your No 1 Vape store in Nairobi
 <div class="row px-5 gradient-header pb-5">
     <div class="col-lg-7 pt-5">
         <h1 class="introducing">Introducing</h1>
-        <h3 class="introducing-product">{{ $introducing->productName}}</h3>
-        <button class="btn btn-danger col-sm-2 mb-2 ">Ksh {{$introducing->productPrice}}/= </button>
-        <p>{{ $introducing->productShortDescription}}</p>
+        	<h3 class="introducing-product">{{ $introducing->productName}}</h3>
+	<div class="long-desc mb-3">
+        	<button class="btn btn-danger col-sm-4 mb-2 ">Ksh {{$introducing->productPrice}}/= </button>
+        </div>
+	<p>{{ $introducing->productShortDescription}}</p>
     </div>
-    <div class="col-lg-5">
+    <div class="col-lg-5 pt-5">
         <a href="{{route('products.show', $introducing->id)}}" class="text-decoration-none text-dark">
             <img src="{{url('storage/' . $introducing->productCategory . '/' . $introducing->productBaseImage)}}"
                 height="350px" class="card-img-top px-3 py-3 rounded hover-zoom" alt="{{ $introducing->productName}}" />

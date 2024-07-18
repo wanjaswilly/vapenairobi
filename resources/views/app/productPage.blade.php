@@ -10,7 +10,7 @@
         <h1 class="introducing-product">{{ $product->productName}}</h1>
         <p class="category-explanation">{{ $product->productShortDescription}}</p>
         <div class="long-desc mb-3">
-            <button class="btn btn-danger col-sm-2 mb-2 ">Ksh {{$product->productPrice}}/= </button>
+            <button class="btn btn-danger col-sm-4  mb-2 ">Ksh {{$product->productPrice}}/= </button>
         </div>
         <div class="text-center">
             <form action="{{route('whatsapp-link') }}" method="post">
@@ -38,7 +38,8 @@
 </div>
 <div class="row px-4">
     <div class="col-lg-10 px-5 py-5">
-        <p class="mb-5">{{ $product->productLongDescription}}</p>
+	<h2 class="fw-bold">Product Description</h2>
+        <p class="mb-5">{!! $product->productLongDescription !!}</p>
     </div>
 </div>
 <div class="row gradient-vapes">

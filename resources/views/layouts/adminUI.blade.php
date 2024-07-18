@@ -56,7 +56,7 @@
         }
     </style>
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -71,7 +71,7 @@
             </span>
             <!-- Navbar brand -->
             <a class="navbar-brand mt-2 visible-sm mt-lg-0" href="{{ route('landing') }}">
-                <img src="/vape-Nairobi.png" height="35" alt="Vape Nairobi Logo" loading="lazy" />
+                <img src="/vape-Nairobi.jpeg" height="35" alt="Vape Nairobi Logo" loading="lazy" />
             </a>
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -262,6 +262,13 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+  <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
 </body>
 
 </html>

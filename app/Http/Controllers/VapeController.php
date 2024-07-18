@@ -61,7 +61,7 @@ class VapeController extends Controller
         ]);
 
         $flavours = explode(',', $request['productFlavours']);
-        $productBaseImageName = str_replace(" ","-",$request['productName'])."-0.png";
+        $productBaseImageName = str_replace(" ","-",$request['productName'])."-0.";
         $product = Products::create([
             'productName' => $request['productName'],
             'productCategory' => $request['productCategory'],
@@ -103,6 +103,10 @@ class VapeController extends Controller
                 $fileName = $productName.'-'.$key.'.'.$extension;
                 $imageNames[] = $fileName;
                 $file->storePubliclyAs('public/'.$productCategory.'/', $fileName);
+
+		$product = Products::find($request->productID);
+                $product->productBaseImage =$productName.'-0.'.$extension;
+                $product->save();
             }
         }
         
