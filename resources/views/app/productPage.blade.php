@@ -4,6 +4,19 @@
 {{$product->productName ?? "Vape"}}
 @endsection
 
+@section('meta-description')
+<meta name="robots" content="all">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="description" content="{{$product->productShortDescription}}">
+<meta property="og:title" content="{{$product->productName}}" />
+<meta property="og:type" content="article" />
+<meta property="og:description" content="{{$product->productShortDescription}}" />
+<meta property="og:image"
+    content="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}" />
+    <meta property="og:url" content="https://www.vapenairobi.com/products/{{$product->id}}" />
+
+@endsection
+
 @section('content')
 <div class="row px-4">
     <div class="col-lg-7 px-5 py-5 col-xs-12">
@@ -34,11 +47,11 @@
     <div class="col-lg-5">
         <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}"
             class="img-fluid rounded hover-zoom" alt="{{$product->productName}}" />
-    </div>    
+    </div>
 </div>
 <div class="row px-4">
     <div class="col-lg-10 px-5 py-5">
-	<h2 class="fw-bold">Product Description</h2>
+        <h2 class="fw-bold">Product Description</h2>
         <p class="mb-5">{!! $product->productLongDescription !!}</p>
     </div>
 </div>
@@ -54,7 +67,8 @@
                     <a href="{{route('products.show', $product->id)}}" class="text-decoration-none text-dark">
                         <div class="mb-2 ofh">
                             <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}"
-                                height="350px" class="card-img-top px-3 py-3 rounded  hover-zoom" alt="{{$product->productName}}" />
+                                height="350px" class="card-img-top px-3 py-3 rounded  hover-zoom"
+                                alt="{{$product->productName}}" />
 
                             <div class="text-center">
                                 <h3><b>{{ $product->productName }}</b></h3>

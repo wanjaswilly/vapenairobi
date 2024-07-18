@@ -4,6 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="geo.position" content="-1.266944,36.811667">
+    <meta name="geo.region" content="Nairobi">
+    <meta name="geo.placename" content="Nairobi, Kenya">
+    @yield('meta-description', '
+            <meta name="robots" content="all">
+            <meta name="robots" content="max-image-preview:standard">')
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -101,28 +107,34 @@
                 <ul class="navbar-nav flex-row">
                     <!-- Icons -->
                     <li class="nav-item">
-                        <a class="nav-link pe-2" href="#!">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                    <a href="https://g.co/kgs/mYB6r8h" class="nav-link px-2">
+                    <i class="fab fa-google"></i>
+                </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="#!">
+                        <a class="nav-link px-2" href="https://www.facebook.com/profile.php?id=61558782167871&mibextid=ZbWKwL">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="#!">
+                        <a class="nav-link px-2" href="https://x.com/VapesNeon?t=qS9b34gQFB78_o2JR9YXuQ&s=09">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ps-2" href="#!">
+                        <a class="nav-link ps-2" href="https://www.instagram.com/vapenairobikenya?igsh=YjduaG53YW1nZ2V3">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ps-2" href="#!">
+                        <a class="nav-link ps-2" href="https://wa.me/254721683375?text=Hello%20Vape%20Nairobi">
                             <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                    <!-- Avatar -->
+                    <li class="nav-item">
+                        <a class="nav-link ps-2" href="{{ route('login')}}">
+                            <i class="fa fa-user"></i>
                         </a>
                     </li>
                 </ul>
