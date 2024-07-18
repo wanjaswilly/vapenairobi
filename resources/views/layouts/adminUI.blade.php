@@ -7,9 +7,9 @@
     <meta name="geo.position" content="-1.266944,36.811667">
     <meta name="geo.region" content="Nairobi">
     <meta name="geo.placename" content="Nairobi, Kenya">
-    @yield('meta-description', "
-            <meta name='robots' content='all'>
-            <meta name='robots' content='max-image-preview:standard'>")
+    <meta name='robots' content='all'>
+    <meta name='robots' content='max-image-preview:standard'>
+    @yield('meta-description', "")
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -62,7 +62,7 @@
         }
     </style>
     <!-- Scripts -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -107,12 +107,13 @@
                 <ul class="navbar-nav flex-row">
                     <!-- Icons -->
                     <li class="nav-item">
-                    <a href="https://g.co/kgs/mYB6r8h" class="nav-link px-2">
-                    <i class="fab fa-google"></i>
-                </a>
+                        <a href="https://g.co/kgs/mYB6r8h" class="nav-link px-2">
+                            <i class="fab fa-google"></i>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-2" href="https://www.facebook.com/profile.php?id=61558782167871&mibextid=ZbWKwL">
+                        <a class="nav-link px-2"
+                            href="https://www.facebook.com/profile.php?id=61558782167871&mibextid=ZbWKwL">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
@@ -122,7 +123,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ps-2" href="https://www.instagram.com/vapenairobikenya?igsh=YjduaG53YW1nZ2V3">
+                        <a class="nav-link ps-2"
+                            href="https://www.instagram.com/vapenairobikenya?igsh=YjduaG53YW1nZ2V3">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </li>
@@ -163,19 +165,23 @@
 
             <!-- Right -->
             <div>
-                <a href="https://www.facebook.com/profile.php?id=61558782167871" class="me-4 text-decoration-none text-dark">
+                <a href="https://www.facebook.com/profile.php?id=61558782167871"
+                    class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-facebook-f fa-2x"></i>
                 </a>
-                <a href="https://x.com/VapesNeon?t=qS9b34gQFB78_o2JR9YXuQ&s=09" class="me-4 text-decoration-none text-dark">
+                <a href="https://x.com/VapesNeon?t=qS9b34gQFB78_o2JR9YXuQ&s=09"
+                    class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-twitter fa-2x"></i>
                 </a>
                 <a href="https://g.co/kgs/mYB6r8h" class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-google fa-2x"></i>
                 </a>
-                <a href="https://www.instagram.com/vapenairobikenya?igsh=YjduaG53YW1nZ2V3" class="me-4 text-decoration-none text-dark">
+                <a href="https://www.instagram.com/vapenairobikenya?igsh=YjduaG53YW1nZ2V3"
+                    class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-instagram fa-2x"></i>
                 </a>
-                <a href="https://wa.me/254721683375?text='Hello%20Vape%20Nairobi'" class="me-4 text-decoration-none text-dark">
+                <a href="https://wa.me/254721683375?text='Hello%20Vape%20Nairobi'"
+                    class="me-4 text-decoration-none text-dark">
                     <i class="fab fa-whatsapp fa-2x"></i>
                 </a>
             </div>
@@ -274,13 +280,13 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
-  <script type="text/javascript"
+    <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
+
 </body>
 
 </html>

@@ -7,9 +7,9 @@
     <meta name="geo.position" content="-1.266944,36.811667">
     <meta name="geo.region" content="Nairobi">
     <meta name="geo.placename" content="Nairobi, Kenya">
-    @yield('meta-description', '
-            <meta name="robots" content="all">
-            <meta name="robots" content="max-image-preview:standard">')
+    <meta name="robots" content="all">
+    <meta name="robots" content="max-image-preview:standard">
+    @yield('meta-description', '')
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -141,7 +141,7 @@
             </span>
             <!-- Navbar brand -->
             <a class="navbar-brand mt-2 visible-sm mt-lg-0" href="{{ route('landing') }}">
-                 Vape Nairobi
+                Vape Nairobi
             </a>
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
