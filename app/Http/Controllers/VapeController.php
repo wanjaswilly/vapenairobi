@@ -20,7 +20,7 @@ class VapeController extends Controller
     {
 
         return view("app.home")->with([
-            "introducing" => Products::orderBy("created_at", "desc")->first(),
+            "introducing" => Products::where('productCategory', 'disposables')->orderBy("created_at", "desc")->first(),
             "disposables" => Products::where('productCategory', 'disposables')->orderBy("created_at", "desc")->paginate(7),
             "eliquids" => Products::where('productCategory', 'e-liquids')->orderBy("created_at", "desc")->paginate(3),
             "devices" => Products::where('productCategory', 'devices')->orderBy("created_at", "desc")->paginate(3),
