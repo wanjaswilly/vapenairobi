@@ -47,18 +47,18 @@
 
         .introducing {
             font-weight: 700;
-            font-size: 5rem;
+            font-size: 4rem;
             padding-top: 10% !important;
         }
 
         .introducing-product {
             font-weight: 700;
-            font-size: 5rem;
+            font-size: 4rem;
         }
 
         .category-header {
             font-weight: 600;
-            font-size: 5rem;
+            font-size: 4rem;
             text-align: center;
         }
 
