@@ -5,16 +5,15 @@
 @endsection
 
 @section('meta-description')
-<meta name="robots" content="all">
-<meta name="robots" content="max-image-preview:standard">
-<meta name="description" content="{{$product->productShortDescription}}">
-<meta property="og:title" content="{{$product->productName}}" />
-<meta property="og:type" content="article" />
-<meta property="og:description" content="{{$product->productShortDescription}}" />
-<meta property="og:image"
+    <meta name="robots" content="all">
+    <meta name="robots" content="max-image-preview:standard">
+    <meta name="description" content="{{$product->productShortDescription}}">
+    <meta property="og:title" content="{{$product->productName}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="{{$product->productShortDescription}}" />
+    <meta property="og:image"
     content="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}" />
     <meta property="og:url" content="https://www.vapenairobi.com/products/{{$product->id}}" />
-
 @endsection
 
 @section('content')

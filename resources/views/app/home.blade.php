@@ -3,6 +3,16 @@
 @section('pageName')
 Your No 1 Vape store in Nairobi
 @endsection
+@section('meta-description')
+    <meta name="robots" content="all">
+    <meta name="robots" content="max-image-preview:standard">
+    <meta name="description" content="The number one vape store in Nairobi. Contact us for quality vape disposables, vale E-liquids and vape devices. We offer paid delivery to all parts of the country.">
+    <meta property="og:title" content="Vape Nairobi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="The number one vape store in Nairobi. Contact us for quality vape disposables, vale E-liquids and vape devices. We offer paid delivery to all parts of the country." />
+    <meta property="og:image" content="https://vapenairobi.com/vape-Nairobi.jpeg" />
+    <meta property="og:url" content="https://www.vapenairobi.com" />
+@endsection
 
 @section('content')
 
