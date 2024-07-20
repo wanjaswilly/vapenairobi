@@ -47,7 +47,7 @@ Your No 1 Vape store in Nairobi
                 <a href="{{route('products.show', $product->id)}}" class="text-decoration-none text-dark">
                     <div class="mb-2">
                         <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}"
-                            class="card-img-top px-3 py-3 rounded hover-zoom" height="350px" alt="{{$product->productName}}" />
+                            class="card-img-top px-3 py-3 rounded hover-zoom" height="450px" alt="{{$product->productName}}" />
 
                         <div class="text-center">
                             <h3><b>{{ $product->productName }}</b></h3>
