@@ -13,22 +13,19 @@ Disposable Vapes
     </div>
     <div class="row row-cols-1 row-cols-md-4 g-4 px-5 pb-5">
         @forelse($disposables as $product)
-            @if ($loop->index == 0)
-            @else
-                <div class="col">
-                    <a href="{{route('products.show', $product->id)}}" class="text-decoration-none text-dark">
-                        <div class="mb-2">
-                            <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)  }}" height="350px" class="card-img-top px-3 py-3 rounded"
-                                alt="{{ $product->productName}}" />
+            <div class="col">
+                <a href="{{route('products.show', $product->id)}}" class="text-decoration-none text-dark">
+                    <div class="mb-2">
+                        <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)  }}"
+                            height="350px" class="card-img-top px-3 py-3 rounded" alt="{{ $product->productName}}" />
 
-                            <div class="text-center">
-                                <h3><b>{{ $product->productName }}</b></h3>
-                                <p>{{ $product->productShortDescription}}</p>
-                            </div>
+                        <div class="text-center">
+                            <h3><b>{{ $product->productName }}</b></h3>
+                            <p>{{ $product->productShortDescription}}</p>
                         </div>
-                    </a>
-                </div>
-            @endif
+                    </div>
+                </a>
+            </div>
         @empty
             <div class="col-lg-12">
                 <h1 class="text-bold text-center">Sorry, We have no disposable vapes at the moment.</h1>
