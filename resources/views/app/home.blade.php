@@ -77,7 +77,7 @@ Your No 1 Vape store in Nairobi
                 <a href="{{route('products.show', $product->id)}}" class="text-decoration-none text-dark">
                     <div class=" mb-3 pb-2">
                         <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}"
-                            class="card-img-top px-3 py-3 rounded hover-zoom" height="350px" alt="{{$product->productName}}" />
+                            class="card-img-top px-3 py-3 rounded hover-zoom" style="zoom:1.5;" height="350px" alt="{{$product->productName}}" />
 
                         <div class="text-center">
                             <h3><b>{{ $product->productName }}</b></h3>
@@ -104,7 +104,7 @@ Your No 1 Vape store in Nairobi
             <a href="{{route('products.show', $product->id)}}" class="text-decoration-none text-dark">
             <div class="">
                     <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}"
-                        class="card-img-top px-3 py-3 rounded hover-zoom" height="350px" alt="{{$product->productName}}" />
+                        class="card-img-top px-3 py-3 rounded hover-zoom" height="350px" style="zoom:1.5;" alt="{{$product->productName}}" />
 
                     <div class="text-center">
                         <h3><b>{{ $product->productName }}</b></h3>
@@ -133,7 +133,7 @@ Your No 1 Vape store in Nairobi
             <a href="{{route('products.show', $product->id)}}" class="text-decoration-none text-dark">
             <div class="">
                     <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}"
-                        class="card-img-top px-3 py-3 rounded hover-zoom" height="350px" alt="{{$product->productName}}" />
+                        class="card-img-top px-3 py-3 rounded hover-zoom" height="350px" style="zoom:1.5;" alt="{{$product->productName}}" />
 
                     <div class="text-center">
                         <h3><b>{{ $product->productName }}</b></h3>

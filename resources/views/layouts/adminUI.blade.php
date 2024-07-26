@@ -76,7 +76,7 @@
                 <i class="fas fa-bars"></i>
             </span>
             <!-- Navbar brand -->
-            <a class="navbar-brand mt-2 visible-sm mt-lg-0" href="{{ route('landing') }}">
+            <a class="navbar-brand mt-2 visible-sm mt-lg-0 fw-bold" href="{{ route('landing') }}">
                 <img src="/vape-Nairobi.jpeg" height="35" alt="Vape Nairobi Logo" loading="lazy" />
                 Vape Nairobi
             </a>
