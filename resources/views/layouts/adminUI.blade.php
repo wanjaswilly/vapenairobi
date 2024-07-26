@@ -86,16 +86,16 @@
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('products.create')}}">Add New Product</a>
+                        <a class="nav-link fw-bold" href="{{ route('products.create')}}">Add New Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.productList')}}">View Products</a>
+                        <a class="nav-link fw-bold" href="{{ route('admin.productList')}}">View Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.siteStatistics')}}">Site Statistics</a>
+                        <a class="nav-link fw-bold" href="{{ route('admin.siteStatistics')}}">Site Statistics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Others</a>
+                        <a class="nav-link fw-bold" href="#">Others</a>
                     </li>
                 </ul>
                 <!-- Left links -->

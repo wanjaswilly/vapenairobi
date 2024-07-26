@@ -149,17 +149,17 @@
 
                 <!-- Left links -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('disposables')}}">Disposables</a>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="{{ route('disposables')}}"><b>Disposables</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('e-liquids')}}">E-liquids</a>
+                        <a class="nav-link fw-bold" href="{{ route('e-liquids')}}"><b>E-liquids</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('devices')}}">Devices</a>
+                        <a class="nav-link fw-bold" href="{{ route('devices')}}"><b>Devices</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('others')}}">Others</a>
+                        <a class="nav-link fw-bold" href="{{ route('others')}}"><b>Others</b></a>
                     </li>
                 </ul>
                 <!-- Left links -->
