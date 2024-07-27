@@ -96,7 +96,7 @@
                         <a class="nav-link fw-bold" href="{{ route('admin.siteStatistics')}}">Site Statistics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#">Others</a>
+                        <a class="nav-link fw-bold" href="{{ route('admin.users')}}">Users</a>
                     </li>
                 </ul>
                 <!-- Left links -->

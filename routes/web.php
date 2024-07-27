@@ -38,6 +38,8 @@ Route::middleware(['isAdmin'])->group(function () {
     Route::get('/product-list', [App\Http\Controllers\HomeController::class, 'productsList'])->name('admin.productList');
     Route::get('/site-statistics', [App\Http\Controllers\HomeController::class, 'siteStatistics'])->name('admin.siteStatistics');
     Route::get('/product-list-filter/{productCategory}', [App\Http\Controllers\HomeController::class, 'productsListFilter'])->name('admin.productsListFilter');
-
+    Route::get('/users', [App\Http\Controllers\HomeController::class,'users'])->name('admin.users');
+    Route::get('/users/make-admin/{id}', [App\Http\Controllers\HomeController::class,'makeAdmin'])->name('user.makeAdmin');
+    Route::get('/users/revoke-admin/{id}', [App\Http\Controllers\HomeController::class,'revokeAdmin'])->name('user.revokeAdmin');
     Route::get('/edit-product-status/{id}', [App\Http\Controllers\HomeController::class, 'editProductStatus'])->name('admin.editProductStatus');
 });

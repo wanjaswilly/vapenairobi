@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Products;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -53,6 +54,28 @@ class HomeController extends Controller
             $product->productStatus = "In Stock";
         }
         $product->save();
+        return redirect()->back();
+    }
+
+    public function users()
+    {
+        return view("admin.users")->with('users', User::orderBy('created_at','desc')->get());
+    }
+
+    public function makeAdmin($id)
+    {
+        $user = User::find($id);
+        $user->is_admin = true;
+        $user->save();
+        return redirect()->back();
+    }
+
+    public function revokeAdmin($id)
+    {
+        
+        $user = User::find($id);
+        $user->is_admin = false;
+        $user->save();
         return redirect()->back();
     }
 }
