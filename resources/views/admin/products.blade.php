@@ -68,7 +68,7 @@ All Products
                             </td>
                             <td>
                                 <p class="fw-normal mb-1">{{$product->productManufacturer}}</p>
-                                <p class="text-muted mb-0">{{$product->productPrice}}</p>
+                                <p class="text-muted mb-0">{{$product->productQuantity}}</p>
                             </td>
                             <td>
                                 <a href="{{ route('admin.editProductStatus', $product->id)}}">

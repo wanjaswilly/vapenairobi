@@ -163,7 +163,7 @@
                     </li>
                     @auth
                         <li class="nav-item">
-                        <a class="nav-link fw-bold" href="{{ route('admin.home')}}"><b>Admin</b></a>
+                            <a class="nav-link fw-bold" href="{{ route('admin.home')}}"><b>Admin</b></a>
                         </li>
                     @endauth
                 </ul>
