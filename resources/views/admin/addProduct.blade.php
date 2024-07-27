@@ -32,14 +32,23 @@ Add Product
                 </div>
             </div>
 
-            <div class="">
-                <select class="form-select" id="productCategory"  name="productCategory" style="background:rgba(0,0,0,0.01);" required>
-                    <option selected disabled>Choose a Product Category</option>
-                    <option value="disposables">Disposables</option>
-                    <option value="e-liquids">E-liquids</option>
-                    <option value="devices">Devices</option>
-                    <option value="others">Others</option>
-                </select>
+            <div class="row mb-4">
+                <div class="col">
+                    <select class="form-select" id="productCategory"  name="productCategory" style="background:rgba(0,0,0,0.01);" required>
+                        <option selected disabled>Choose a Product Category</option>
+                        <option value="disposables">Disposables</option>
+                        <option value="e-liquids">E-liquids</option>
+                        <option value="devices">Devices</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <div data-mdb-input-init class="form-outline">
+                        <input type="text" id="productQuantity" name="productQuantity" class="form-control" required />
+                        <label class="form-label" for="productQuantity">Product Quantity</label>
+                    </div>
+                <small>Example: 2000 puffs, 60ml 30mg</small>
+                </div>
             </div>
 
             <!-- Text input -->

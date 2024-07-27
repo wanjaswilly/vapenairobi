@@ -15,8 +15,8 @@ E-Liquids For Vape Devices
             <div class="col">
                 <a href="{{route('products.show', $product->id)}}" class="text-decoration-none text-dark">
                     <div class="mb-2">
-                        <img src="/vape{{$loop->index + 2}}.png" height="350px" class="card-img-top px-3 py-3 rounded"
-                            alt="Hollywood Sign on The Hill" />
+                        <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)  }}" height="350px" class="card-img-top px-3 py-3 rounded"
+                            alt="{{$product->productName }}" />
 
                         <div class="text-center">
                             <h3><b>{{ $product->productName }}</b></h3>

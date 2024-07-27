@@ -32,6 +32,11 @@ class HomeController extends Controller
         return view('admin.products')->with('products', Products::orderBy('created_at','desc')->get());
     }
 
+    public function productsListFilter($productCategory)
+    {
+        return view('admin.products')->with('products', Products::where('productCategory', $productCategory)->orderBy('created_at','desc')->get());
+    }
+
     public function siteStatistics()
     {
         return view('admin.siteStatistics');

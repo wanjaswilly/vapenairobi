@@ -35,4 +35,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.home');
 Route::get('/product-list', [App\Http\Controllers\HomeController::class, 'productsList'])->name('admin.productList');
+Route::get('/product-list-filter/{productCategory}', [App\Http\Controllers\HomeController::class, 'productsListFilter'])->name('admin.productsListFilter');
 Route::get('/site-statistics', [App\Http\Controllers\HomeController::class, 'siteStatistics'])->name('admin.siteStatistics');

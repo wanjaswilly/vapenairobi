@@ -5,104 +5,90 @@ All Products
 @endsection
 
 @section('content')
-<div class="row mt-5 mx-3">
-    <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+<div class="row  my-5 mb-5 pb-5">
+    <div class="row ">
+        <div class="col">
+            <a href="{{route('admin.productsListFilter', ['productCategory'=>'disposables']) }}">
+                <div class="card mb-3 py-3">
+                    <div class="card-body text-center">
+                        <i class="fas fa-square-plus fa-2x"></i>
+                        <p class="card-title mt-3"><b>Disposables</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{{route('admin.productsListFilter', ['productCategory'=>'devices']) }}">
+                <div class="card mb-3 py-3">
+                    <div class="card-body text-center">
+                        <i class="fas fa-square-plus fa-2x"></i>
+                        <p class="card-title mt-3"><b>E-liquids</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{{route('admin.productsListFilter', ['productCategory'=>'e-liquids']) }}">
+                <div class="card mb-3 py-3">
+                    <div class="card-body text-center">
+                        <i class="fas fa-square-plus fa-2x"></i>
+                        <p class="card-title mt-3"><b>Devices</b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
     <div class="row">
-        <table class="table align-middle mb-0 bg-white">
-            <thead class="bg-light">
-                <tr>
-                    <th>Product Name</th>
-                    <th>Product Category</th>
-                    <th>Status</th>
-                    <th>Price</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
-                                style="width: 45px; height: 45px" class="rounded-circle" />
-                            <div class="ms-3">
-                                <p class="fw-bold mb-1">John Doe</p>
-                                <p class="text-muted mb-0">john.doe@gmail.com</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="fw-normal mb-1">Software engineer</p>
-                        <p class="text-muted mb-0">IT department</p>
-                    </td>
-                    <td>
-                        <span class="badge badge-success rounded-pill d-inline">Active</span>
-                    </td>
-                    <td>Senior</td>
-                    <td>
-                        <button type="button" class="btn btn-link btn-sm btn-rounded">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
-                                style="width: 45px; height: 45px" />
-                            <div class="ms-3">
-                                <p class="fw-bold mb-1">Alex Ray</p>
-                                <p class="text-muted mb-0">alex.ray@gmail.com</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="fw-normal mb-1">Consultant</p>
-                        <p class="text-muted mb-0">Finance</p>
-                    </td>
-                    <td>
-                        <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
-                    </td>
-                    <td>Junior</td>
-                    <td>
-                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold"
-                            data-mdb-ripple-color="dark">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
-                                style="width: 45px; height: 45px" />
-                            <div class="ms-3">
-                                <p class="fw-bold mb-1">Kate Hunington</p>
-                                <p class="text-muted mb-0">kate.hunington@gmail.com</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="fw-normal mb-1">Designer</p>
-                        <p class="text-muted mb-0">UI/UX</p>
-                    </td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-                    </td>
-                    <td>Senior</td>
-                    <td>
-                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold"
-                            data-mdb-ripple-color="dark">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table align-middle mb-0 bg-white">
+                <thead class="bg-light">
+                    <tr>
+                        <th>Product</th>
+                        <th>Manufacturer </th>
+                        <th>Status</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse($products as $product)
+                        <tr>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img src="{{url('storage/' . $product->productCategory . '/' . $product->productBaseImage)}}"
+                                        class="rounded-circle" alt="{{$product->productName}}"
+                                        style="width: 45px; height: 45px" />
+                                    <div class="ms-3">
+                                        <p class="fw-bold mb-1">{{$product->productName}}</p>
+                                        <p class="text-muted mb-0">{{ $product->productCategory}}</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="fw-normal mb-1">{{$product->productManufacturer}}</p>
+                                <p class="text-muted mb-0">{{$product->productPrice}}</p>
+                            </td>
+                            <td>
+                                <span class="badge badge-primary rounded-pill d-inline">{{$product->status}}</span>
+                            </td>
+                            <td>{{$product->productPrice}}</td>
+                            <td>
+                                <a href="{{ route('products.edit', $product->id)}}">
+                                    <button type="button" class="btn btn-warning btn-rounded btn-sm fw-bold"
+                                        data-mdb-ripple-color="dark">
+                                        Edit
+                                    </button>
+                                </a>
+                            </td>
+                        </tr>
+                    @empty
+                        <tr>
+                            <td>No products available</td>
+                        </tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
