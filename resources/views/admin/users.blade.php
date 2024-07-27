@@ -8,7 +8,7 @@ Users
 <div class="row mt-5 pb-5 mx-3">
     <h2><b>Registered Users</b></h2>
     <hr>
-    <div class="row">
+    <div class="row table-responsive">
         <table class="table align-middle mb-0 bg-white">
             <thead class="bg-light">
                 <tr>
