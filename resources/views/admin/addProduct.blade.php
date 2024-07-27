@@ -4,6 +4,10 @@
 Add Product
 @endsection
 
+@section('css')
+<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.2/ckeditor5.css">
+@endsection
+
 @section('content')
 <div class="d-flex align-items-center justify-content-center">
     <div class="col-sm-6 mt-5 mb-4">
@@ -82,4 +86,48 @@ Add Product
         </form>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+<script type="importmap">
+            {
+                "imports": {
+                    "ckeditor5": "https://cdn.ckeditor.com/ckeditor5/42.0.2/ckeditor5.js",
+                    "ckeditor5/": "https://cdn.ckeditor.com/ckeditor5/42.0.2/"
+                }
+            }
+        </script>
+<script type="module">
+    import {
+        ClassicEditor,
+        Essentials,
+        Paragraph,
+        Bold,
+        Italic,
+        Font
+    } from 'ckeditor5';
+
+    ClassicEditor
+        .create(document.querySelector('#productLongDescription'), {
+            plugins: [Essentials, Paragraph, Bold, Italic, Font],
+            toolbar: [
+                'undo', 'redo', '|', 'bold', 'italic', '|',
+                'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+            ]
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+</script>
+<!-- A friendly reminder to run on a server, remove this during the integration. -->
+<script>
+    window.onload = function () {
+        if (window.location.protocol === "file:") {
+            alert("This sample requires an HTTP server. Please serve this file with a web server.");
+        }
+    };
+</script>
 @endsection
