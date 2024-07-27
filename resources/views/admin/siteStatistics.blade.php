@@ -5,12 +5,46 @@ Site Statistics
 @endsection
 
 @section('content')
-<div class="row mt-5 mx-3">
+<div class="row mt-5 pb-5 mx-3">
     <div class="row">
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div>
+        <h2><b>Site Statistics</b></h2>
+        <hr>
+        <div class="col">
+            <div class="col">
+                <a href="{{route('admin.productsListFilter', ['productCategory' => 'devices']) }}">
+                    <div class="card mb-3 py-3">
+                        <div class="card-body text-center">
+                            <i class="fas fa-square-plus fa-2x"></i>
+                            <p class="card-title mt-3"><b>Locations</b></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col">
+                <a href="{{route('admin.productsListFilter', ['productCategory' => 'devices']) }}">
+                    <div class="card mb-3 py-3">
+                        <div class="card-body text-center">
+                            <i class="fas fa-square-plus fa-2x"></i>
+                            <p class="card-title mt-3"><b>Devices</b></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col">
+                <a href="{{route('admin.productsListFilter', ['productCategory' => 'devices']) }}">
+                    <div class="card mb-3 py-3">
+                        <div class="card-body text-center">
+                            <i class="fas fa-square-plus fa-2x"></i>
+                            <p class="card-title mt-3"><b>Time</b></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
     <div class="row">
         <table class="table align-middle mb-0 bg-white">
@@ -25,81 +59,7 @@ Site Statistics
             </thead>
             <tbody>
                 <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""
-                                style="width: 45px; height: 45px" class="rounded-circle" />
-                            <div class="ms-3">
-                                <p class="fw-bold mb-1">John Doe</p>
-                                <p class="text-muted mb-0">john.doe@gmail.com</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="fw-normal mb-1">Software engineer</p>
-                        <p class="text-muted mb-0">IT department</p>
-                    </td>
-                    <td>
-                        <span class="badge badge-success rounded-pill d-inline">Active</span>
-                    </td>
-                    <td>Senior</td>
-                    <td>
-                        <button type="button" class="btn btn-link btn-sm btn-rounded">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
-                                style="width: 45px; height: 45px" />
-                            <div class="ms-3">
-                                <p class="fw-bold mb-1">Alex Ray</p>
-                                <p class="text-muted mb-0">alex.ray@gmail.com</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="fw-normal mb-1">Consultant</p>
-                        <p class="text-muted mb-0">Finance</p>
-                    </td>
-                    <td>
-                        <span class="badge badge-primary rounded-pill d-inline">Onboarding</span>
-                    </td>
-                    <td>Junior</td>
-                    <td>
-                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold"
-                            data-mdb-ripple-color="dark">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
-                                style="width: 45px; height: 45px" />
-                            <div class="ms-3">
-                                <p class="fw-bold mb-1">Kate Hunington</p>
-                                <p class="text-muted mb-0">kate.hunington@gmail.com</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <p class="fw-normal mb-1">Designer</p>
-                        <p class="text-muted mb-0">UI/UX</p>
-                    </td>
-                    <td>
-                        <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-                    </td>
-                    <td>Senior</td>
-                    <td>
-                        <button type="button" class="btn btn-link btn-rounded btn-sm fw-bold"
-                            data-mdb-ripple-color="dark">
-                            Edit
-                        </button>
-                    </td>
+                    <td>We are working on this.</td>
                 </tr>
             </tbody>
         </table>

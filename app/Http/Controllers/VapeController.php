@@ -18,6 +18,13 @@ class VapeController extends Controller
      *
      * @return 
      */
+    public function __construct()
+    {
+        // Middleware only applied to these methods
+        $this->middleware('isAdmin')->only([
+            'update','create','store','addProductImages','saveProductImages','edit','destroy',
+        ]);
+    }
     public function index()
     {
 
@@ -150,8 +157,7 @@ class VapeController extends Controller
         if (Auth::check()) {
 
             return view('admin.editProduct')->with('product', Products::findOrFail($id));
-        }else
-        {   
+        } else {
             return redirect()->route('login')->with('error', 'You have to be authorized first to edit a product.');
         }
     }
@@ -189,8 +195,7 @@ class VapeController extends Controller
 
             $product->save();
             return redirect()->route('admin.productList');
-        }else
-        {
+        } else {
             return redirect()->route('login')->with('error', 'You have to be authorized first to edit a product.');
         }
     }

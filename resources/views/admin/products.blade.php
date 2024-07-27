@@ -5,10 +5,12 @@ All Products
 @endsection
 
 @section('content')
-<div class="row  my-5 mb-5 pb-5">
+<div class="row  mt-5 pb-5">
     <div class="row ">
+        <h2><b>Products List : {{$productCategory ?? "All Products"}}</b></h2>
+        <hr>
         <div class="col">
-            <a href="{{route('admin.productsListFilter', ['productCategory'=>'disposables']) }}">
+            <a href="{{route('admin.productsListFilter', ['productCategory' => 'disposables']) }}">
                 <div class="card mb-3 py-3">
                     <div class="card-body text-center">
                         <i class="fas fa-square-plus fa-2x"></i>
@@ -18,7 +20,7 @@ All Products
             </a>
         </div>
         <div class="col">
-            <a href="{{route('admin.productsListFilter', ['productCategory'=>'devices']) }}">
+            <a href="{{route('admin.productsListFilter', ['productCategory' => 'e-liquids']) }}">
                 <div class="card mb-3 py-3">
                     <div class="card-body text-center">
                         <i class="fas fa-square-plus fa-2x"></i>
@@ -28,7 +30,7 @@ All Products
             </a>
         </div>
         <div class="col">
-            <a href="{{route('admin.productsListFilter', ['productCategory'=>'e-liquids']) }}">
+            <a href="{{route('admin.productsListFilter', ['productCategory' => 'devices']) }}">
                 <div class="card mb-3 py-3">
                     <div class="card-body text-center">
                         <i class="fas fa-square-plus fa-2x"></i>
@@ -69,7 +71,10 @@ All Products
                                 <p class="text-muted mb-0">{{$product->productPrice}}</p>
                             </td>
                             <td>
-                                <span class="badge badge-primary rounded-pill d-inline">{{$product->status}}</span>
+                                <a href="{{ route('admin.editProductStatus', $product->id)}}">
+                                    <span
+                                        class="badge badge-primary rounded-pill d-inline">{{$product->productStatus}}</span>
+                                </a>
                             </td>
                             <td>{{$product->productPrice}}</td>
                             <td>

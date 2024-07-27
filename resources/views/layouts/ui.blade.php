@@ -200,9 +200,20 @@
                     </li>
                     <!-- Avatar -->
                     <li class="nav-item">
-                        <a class="nav-link ps-2" href="{{ route('login')}}">
+                        @guest
+                            <a class="nav-link ps-2" href="{{ route('login')}}">
                             <i class="fa fa-user"></i>
-                        </a>
+                            </a>
+                        @else
+                            <a class="nav-link ps-2" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                             document.getElementById('logout-form').submit();">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        @endguest
                     </li>
                 </ul>
 
