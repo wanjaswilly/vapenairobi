@@ -312,10 +312,10 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Useful links
                         </h6>
-                        <p>
+                        <!-- <p>
                             <a href="{{ route('disposables') }}" class="text-decoration-none text-dark">Product
                                 Categories</a>
-                        </p>
+                        </p> -->
                         <p>
                             <a href="{{ route('terms') }}" class="text-decoration-none text-dark">Terms & Conditions</a>
                         </p>
