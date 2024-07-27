@@ -39,21 +39,25 @@ Users
                             @endif
                         </td>
                         <td>
-                            @if ($user->is_admin == false)
-                                <a href="{{ route('user.makeAdmin', $user->id)}}">
-                                    <button type="button" class="btn btn-success btn-rounded btn-sm fw-bold"
-                                        data-mdb-ripple-color="dark">
-                                        Make Admin
-                                    </button>
-                                </a>
-                            @else
-                                <a href="{{ route('user.revokeAdmin', $user->id)}}">
-                                    <button type="button" class="btn btn-warning btn-rounded btn-sm fw-bold"
-                                        data-mdb-ripple-color="dark">
-                                        Revoke Admin
-                                    </button>
-                                </a>
-                            @endif                      </td>
+                            @if (auth()->user()->id != $user->id)
+                                @if ($user->is_admin == false)
+                                    <a href="{{ route('user.makeAdmin', $user->id)}}">
+                                        <button type="button" class="btn btn-success btn-rounded btn-sm fw-bold"
+                                            data-mdb-ripple-color="dark">
+                                            Make Admin
+                                        </button>
+                                    </a>
+                                @else
+                                    <a href="{{ route('user.revokeAdmin', $user->id)}}">
+                                        <button type="button" class="btn btn-warning btn-rounded btn-sm fw-bold"
+                                            data-mdb-ripple-color="dark">
+                                            Revoke Admin
+                                        </button>
+                                    </a>
+                                @endif                             @else
+                                <span class="badge badge-success rounded-pill d-inline">You</span>
+                            @endif                      
+                        </td>
                     </tr>
                 @empty
                     <tr>
