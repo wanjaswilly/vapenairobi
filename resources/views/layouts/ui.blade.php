@@ -161,6 +161,11 @@
                     <li class="nav-item">
                         <a class="nav-link fw-bold" href="{{ route('others')}}"><b>Others</b></a>
                     </li>
+                    @auth
+                        <li class="nav-item">
+                        <a class="nav-link fw-bold" href="{{ route('admin.home')}}"><b>Admin</b></a>
+                        </li>
+                    @endauth
                 </ul>
                 <!-- Left links -->
             </div>
